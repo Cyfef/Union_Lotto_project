@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "union-lotto-predictor"
+version = "1.0.0"
+description = "A reproducible, leakage-safe Double Color Ball research pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Union Lotto Project"}]
+dependencies = []
+
+[project.scripts]
+union-lotto = "union_lotto.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
