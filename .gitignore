@@ -5,7 +5,7 @@ __pycache__/
 dist/
 build/
 *.egg-info/
-artifacts/*.json
-predictions/*.json
+**/artifacts/*.json
+**/predictions/*.json
 backup/
 
